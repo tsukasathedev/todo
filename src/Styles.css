@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto" ;
+    font-weight: 300;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+h1 {
+    text-align: center;
+    font-size: calc(5vw + 15px);
+    margin: 20px 0;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: calc(3vw + 5px);
+}
+
+
+.content {
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+}
+
+
+input {
+    border-radius: 15px;
+    height: calc(4vw + 50px);
+    width: calc(40vw + 4px);
+    text-align: center;
+    margin: 10px 0;
+    font-size: 100%;
+    border: none;
+    box-shadow: 0 3px 6px 0px;
+    margin-top: 20%;
+}
+
+
+button {
+    border: 1px black solid;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    margin: 20px 20px;
+    transition: all 0.5s;
+    border: none;
+    box-shadow: 0 3px 6px 0px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgb(187, 187, 187);
+    transform: scale(1.1);
+}
+
+
+
+.simple {
+    color:white;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.addtask {
+    height: 50px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-weight: 100;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.addtask:hover {
+    background-color: white;
+    border: rgb(17, 17, 217) solid 1px;
+}
+
+img {
+    text-align: center;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+
+li {
+    font-size: calc(2vw + 10px);
+    text-align: left;
+    margin: 40px 0;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;
+    display: inline-block;
+    margin-right: 20px;
+    animation: moveArrow 1s infinite alternate; 
+    display: none;
+  }
+
+  @keyframes moveArrow {
+    from {
+      transform: translateY(0); /* Début de l'animation : position d'origine */
+    }
+    to {
+      transform: translateY(-20px); /* Fin de l'animation : déplacement vers le haut */
+    }
+  }
+  
+
+@media screen and (max-width : 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arrow {
+        display: flex;
+    }
+
+    li {
+        text-align: center;
+    }
+}
+
